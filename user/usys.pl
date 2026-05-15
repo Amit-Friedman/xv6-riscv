@@ -36,3 +36,5 @@ entry("getpid");
 entry("sbrk");
 entry("sleep");
 entry("uptime");
+entry("kernel_lcg_srand");
+entry("kernel_lcg_rand");

@@ -15,6 +15,10 @@ struct proc *initproc;
 int nextpid = 1;
 struct spinlock pid_lock;
 
+// global randomness state variable & lock
+static uint rand;
+struct spinlock rand_lock;
+
 extern void forkret(void);
 static void freeproc(struct proc *p);
 
@@ -680,4 +684,26 @@ procdump(void)
     printf("%d %s %s", p->pid, state, p->name);
     printf("\n");
   }
+}
+
+void 
+kernel_lcg_srand(uint seed)
+{
+  acquire(&rand_lock);
+  rand = seed;
+  release(&rand_lock);
+}
+
+uint 
+kernel_lcg_rand(void)
+{
+  uint a = 1664525;
+  uint b = 1013904223;
+  uint result;
+  acquire(&rand_lock);
+  // (a*x + b) mod 2^32
+  rand = (a*rand + b);
+  result = rand;
+  release(&rand_lock);
+  return result;
 }

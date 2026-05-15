@@ -89,3 +89,21 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+uint64
+sys_kernel_lcg_srand(void)
+{
+  int seed;
+  argint(0, &seed);
+  uint32 safe_seed = (uint32)seed;
+  kernel_lcg_srand(safe_seed);
+  return 0;
+}
+
+uint64
+sys_kernel_lcg_rand(void)
+{
+  return kernel_lcg_rand();
+}
+
+
