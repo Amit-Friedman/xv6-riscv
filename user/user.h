@@ -24,6 +24,12 @@ int sleep(int);
 int uptime(void);
 void kernel_lcg_srand(uint);
 uint kernel_lcg_rand(void);
+void setgid(int);
+int getgid(void);
+int israeli_create(int);
+int israeli_acquire(int);
+int israeli_release(int);
+int israeli_destroy(int);
 
 // ulib.c
 int stat(const char*, struct stat*);

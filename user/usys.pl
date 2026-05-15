@@ -38,3 +38,11 @@ entry("sleep");
 entry("uptime");
 entry("kernel_lcg_srand");
 entry("kernel_lcg_rand");
+entry("setgid");
+entry("getgid");
+entry("israeli_create");
+entry("israeli_acquire");
+entry("israeli_release");
+entry("israeli_destroy");
+
+

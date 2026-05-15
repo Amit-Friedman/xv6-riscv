@@ -106,4 +106,51 @@ sys_kernel_lcg_rand(void)
   return kernel_lcg_rand();
 }
 
+uint64
+sys_setgid(void)
+{
+  int gid;
+  argint(0, &gid);
+  myproc()->gid = gid;
+  return 0;
+}
+
+uint64
+sys_getgid(void)
+{
+  return myproc()->gid;
+}
+
+uint64
+sys_israeli_create(void)
+{
+  int favoritism;
+  argint(0, &favoritism);
+  return israeli_create(favoritism);}
+
+uint64
+sys_israeli_acquire(void)
+{
+  int lockid;
+  argint(0, &lockid);
+  return israeli_acquire(lockid);
+}
+
+uint64
+sys_israeli_release(void)
+{
+  int lockid;
+  argint(0, &lockid);
+  return israeli_release(lockid);
+}
+
+uint64
+sys_israeli_destroy(void)
+{
+  int lockid;
+  argint(0, &lockid);
+  return israeli_destroy(lockid);
+}
+
+
 

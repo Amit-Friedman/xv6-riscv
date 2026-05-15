@@ -3,6 +3,7 @@
 #include "memlayout.h"
 #include "riscv.h"
 #include "spinlock.h"
+#include "israelilock.h"
 #include "proc.h"
 #include "defs.h"
 
@@ -30,6 +31,9 @@ extern char trampoline[]; // trampoline.S
 // must be acquired before any p->lock.
 struct spinlock wait_lock;
 
+// creating an array of 15 israeli locks
+struct israelilock israelilocks[15]; 
+
 // Allocate a page for each process's kernel stack.
 // Map it high in memory, followed by an invalid
 // guard page.
@@ -47,6 +51,23 @@ proc_mapstacks(pagetable_t kpgtbl)
   }
 }
 
+void israeli_lock_init(void) 
+{
+  for (int i = 0; i < 15; i++) {
+    israelilocks[i].safe_lock = 0;   // the lock can be accessed
+    israelilocks[i].locked = 0;      // the Israeli lock starts as not locked
+    israelilocks[i].destroyed = 1;   // Initially no locks are active
+    israelilocks[i].queue_count = 0; 
+    israelilocks[i].favoritism = 0;
+    israelilocks[i].last_holder_gid = -1; // no previous gid yet
+    
+    // Initialize each queue
+    for (int j = 0; j < 16; j++) {
+      israelilocks[i].queue[j] = -1; // use -1 for an empty slot
+    }
+  }
+}
+
 // initialize the proc table.
 void
 procinit(void)
@@ -60,7 +81,10 @@ procinit(void)
       p->state = UNUSED;
       p->kstack = KSTACK((int) (p - proc));
   }
+  israeli_lock_init();
 }
+
+
 
 // Must be called with interrupts disabled,
 // to prevent race with process being moved
@@ -128,6 +152,7 @@ allocproc(void)
 found:
   p->pid = allocpid();
   p->state = USED;
+  p->gid = 0;  // Initialize the new gid field
 
   // Allocate a trapframe page.
   if((p->trapframe = (struct trapframe *)kalloc()) == 0){
@@ -299,6 +324,8 @@ fork(void)
     return -1;
   }
   np->sz = p->sz;
+  // copy gid from parent to child
+  np->gid = p->gid;
 
   // copy saved user registers.
   *(np->trapframe) = *(p->trapframe);
