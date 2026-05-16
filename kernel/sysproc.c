@@ -152,5 +152,32 @@ sys_israeli_destroy(void)
   return israeli_destroy(lockid);
 }
 
+uint64
+sys_init_scores(void)
+{
+  init_scores();
+  return 0;
+}
 
+uint64
+sys_get_score(void)
+{
+  int teamid;
+  argint(0, &teamid);
+  return get_score(teamid);
+}
+
+uint64
+sys_increment_score(void)
+{
+  int teamid;
+  argint(0, &teamid);
+  return increment_score(teamid);
+}
+
+uint64
+sys_is_game_over(void)
+{
+  return is_game_over();
+}
 

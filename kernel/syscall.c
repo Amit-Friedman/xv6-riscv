@@ -109,6 +109,10 @@ extern uint64 sys_israeli_create(void);
 extern uint64 sys_israeli_acquire(void);
 extern uint64 sys_israeli_release(void);
 extern uint64 sys_israeli_destroy(void);
+extern uint64 sys_init_scores(void);
+extern uint64 sys_get_score(void);
+extern uint64 sys_increment_score(void);
+extern uint64 sys_is_game_over(void);
 
 
 
@@ -144,6 +148,10 @@ static uint64 (*syscalls[])(void) = {
 [SYS_israeli_acquire]  sys_israeli_acquire,
 [SYS_israeli_release]  sys_israeli_release,
 [SYS_israeli_destroy]  sys_israeli_destroy,
+[SYS_init_scores]  sys_init_scores,
+[SYS_get_score]  sys_get_score,
+[SYS_increment_score]  sys_increment_score,
+[SYS_is_game_over]  sys_is_game_over,
 };
 
 void

@@ -46,6 +46,7 @@ int get_gid_by_pid(int pid) {
 // ---------------------------------------------------------
 
 int israeli_create(int favoritism) {
+  if(favoritism < 0 || favoritism > 100) return -1;
   for (int i = 0; i < 15; i++) {
     safe_lock_acquire(&israelilocks[i]);
     

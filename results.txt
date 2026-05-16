@@ -1,0 +1,755 @@
+# maximum fairness - acts as FIFO. the acting player's team id changes almost every time. 
+-----------------FAVORITISM: 0-----------------
+------------3 teams of 5 players---------------
+[process id]:4     [team id]: 0       [score]: 1 
+
+[process id]:5     [team id]: 1       [score]: 1 
+
+[process id]:3     [team id]: 2       [score]: 1 
+
+[process id]:7     [team id]: 1       [score]: 2 
+
+[process id]:6     [team id]: 0       [score]: 2 
+
+[process id]:9     [team id]: 1       [score]: 3 
+
+[process id]:8     [team id]: 2       [score]: 2 
+
+[process id]:11     [team id]: 1       [score]: 4 
+
+[process id]:10     [team id]: 0       [score]: 3 
+
+[process id]:12     [team id]: 0       [score]: 4 
+
+[process id]:14     [team id]: 1       [score]: 5 
+
+[process id]:15     [team id]: 2       [score]: 3 
+
+[process id]:16     [team id]: 0       [score]: 5 
+
+[process id]:13     [team id]: 2       [score]: 4 
+
+[process id]:17     [team id]: 2       [score]: 5 
+
+[process id]:5     [team id]: 1       [score]: 6 
+
+[process id]:4     [team id]: 0       [score]: 6 
+
+[process id]:3     [team id]: 2       [score]: 6 
+
+[process id]:6     [team id]: 0       [score]: 7 
+
+[process id]:8     [team id]: 2       [score]: 7 
+
+[process id]:7     [team id]: 1       [score]: 7 
+
+[process id]:9     [team id]: 1       [score]: 8 
+
+[process id]:4     [team id]: 0       [score]: 8 
+
+[process id]:5     [team id]: 1       [score]: 9 
+
+[process id]:12     [team id]: 0       [score]: 9 
+
+[process id]:11     [team id]: 1       [score]: 10 
+
+[process id]:10     [team id]: 0       [score]: 10 
+
+[process id]:13     [team id]: 2       [score]: 8 
+
+[process id]:14     [team id]: 1       [score]: 11 
+
+[process id]:15     [team id]: 2       [score]: 9 
+
+[process id]:16     [team id]: 0       [score]: 11 
+
+[process id]:17     [team id]: 2       [score]: 10 
+
+[process id]:3     [team id]: 2       [score]: 11 
+
+[process id]:5     [team id]: 1       [score]: 12 
+
+[process id]:4     [team id]: 0       [score]: 12 
+
+[process id]:6     [team id]: 0       [score]: 13 
+
+[process id]:7     [team id]: 1       [score]: 13 
+
+[process id]:8     [team id]: 2       [score]: 12 
+
+[process id]:11     [team id]: 1       [score]: 14 
+
+[process id]:9     [team id]: 1       [score]: 15 
+
+[process id]:10     [team id]: 0       [score]: 14 
+
+[process id]:12     [team id]: 0       [score]: 15 
+
+[process id]:4     [team id]: 0       [score]: 16 
+
+[process id]:13     [team id]: 2       [score]: 13 
+
+[process id]:5     [team id]: 1       [score]: 16 
+
+[process id]:14     [team id]: 1       [score]: 17 
+
+[process id]:3     [team id]: 2       [score]: 14 
+
+[process id]:6     [team id]: 0       [score]: 17 
+
+[process id]:15     [team id]: 2       [score]: 15 
+
+[process id]:7     [team id]: 1       [score]: 18 
+
+[process id]:8     [team id]: 2       [score]: 16 
+
+[process id]:16     [team id]: 0       [score]: 18 
+
+[process id]:17     [team id]: 2       [score]: 17 
+
+[process id]:9     [team id]: 1       [score]: 19 
+
+[process id]:3     [team id]: 2       [score]: 18 
+
+[process id]:4     [team id]: 0       [score]: 19 
+
+[process id]:10     [team id]: 0       [score]: 20 
+
+[process id]:5     [team id]: 1       [score]: 20 
+
+[process id]:6     [team id]: 0       [score]: 21 
+
+[process id]:11     [team id]: 1       [score]: 21 
+
+[process id]:7     [team id]: 1       [score]: 22 
+
+[process id]:12     [team id]: 0       [score]: 22 
+
+[process id]:13     [team id]: 2       [score]: 19 
+
+[process id]:14     [team id]: 1       [score]: 23 
+
+[process id]:15     [team id]: 2       [score]: 20 
+
+[process id]:3     [team id]: 2       [score]: 21 
+
+[process id]:9     [team id]: 1       [score]: 24 
+
+[process id]:16     [team id]: 0       [score]: 23 
+
+[process id]:10     [team id]: 0       [score]: 24 
+
+[process id]:4     [team id]: 0       [score]: 25 
+
+[process id]:5     [team id]: 1       [score]: 25 
+
+[process id]:11     [team id]: 1       [score]: 26 
+
+[process id]:17     [team id]: 2       [score]: 22 
+
+[process id]:6     [team id]: 0       [score]: 26 
+
+[process id]:12     [team id]: 0       [score]: 27 
+
+[process id]:7     [team id]: 1       [score]: 27 
+
+[process id]:8     [team id]: 2       [score]: 23 
+
+[process id]:10     [team id]: 0       [score]: 28 
+
+[process id]:9     [team id]: 1       [score]: 28 
+
+[process id]:13     [team id]: 2       [score]: 24 
+
+[process id]:11     [team id]: 1       [score]: 29 
+
+[process id]:14     [team id]: 1       [score]: 30 
+
+
+# There are sequences of turns in which players from the same team advance each other in turn
+-----------------FAVORITISM: 50-----------------
+------------3 teams of 5 players---------------
+[process id]:4     [team id]: 2       [score]: 1 
+
+[process id]:7     [team id]: 2       [score]: 2 
+
+[process id]:5     [team id]: 0       [score]: 1 
+
+[process id]:8     [team id]: 0       [score]: 2 
+
+[process id]:6     [team id]: 1       [score]: 1 
+
+[process id]:9     [team id]: 1       [score]: 2 
+
+[process id]:14     [team id]: 1       [score]: 3 
+
+[process id]:16     [team id]: 1       [score]: 4 
+
+[process id]:18     [team id]: 1       [score]: 5 
+
+[process id]:9     [team id]: 1       [score]: 6 
+
+[process id]:6     [team id]: 1       [score]: 7 
+
+[process id]:10     [team id]: 2       [score]: 3 
+
+[process id]:11     [team id]: 2       [score]: 4 
+
+[process id]:15     [team id]: 2       [score]: 5 
+
+[process id]:4     [team id]: 2       [score]: 6 
+
+[process id]:7     [team id]: 2       [score]: 7 
+
+[process id]:13     [team id]: 0       [score]: 3 
+
+[process id]:12     [team id]: 0       [score]: 4 
+
+[process id]:17     [team id]: 0       [score]: 5 
+
+[process id]:8     [team id]: 0       [score]: 6 
+
+[process id]:5     [team id]: 0       [score]: 7 
+
+[process id]:13     [team id]: 0       [score]: 8 
+
+[process id]:4     [team id]: 2       [score]: 8 
+
+[process id]:18     [team id]: 1       [score]: 8 
+
+[process id]:7     [team id]: 2       [score]: 9 
+
+[process id]:11     [team id]: 2       [score]: 10 
+
+[process id]:10     [team id]: 2       [score]: 11 
+
+[process id]:6     [team id]: 1       [score]: 9 
+
+[process id]:9     [team id]: 1       [score]: 10 
+
+[process id]:15     [team id]: 2       [score]: 12 
+
+[process id]:14     [team id]: 1       [score]: 11 
+
+[process id]:16     [team id]: 1       [score]: 12 
+
+[process id]:4     [team id]: 2       [score]: 13 
+
+[process id]:18     [team id]: 1       [score]: 13 
+
+[process id]:6     [team id]: 1       [score]: 14 
+
+[process id]:9     [team id]: 1       [score]: 15 
+
+[process id]:17     [team id]: 0       [score]: 9 
+
+[process id]:5     [team id]: 0       [score]: 10 
+
+[process id]:7     [team id]: 2       [score]: 14 
+
+[process id]:10     [team id]: 2       [score]: 15 
+
+[process id]:11     [team id]: 2       [score]: 16 
+
+[process id]:4     [team id]: 2       [score]: 17 
+
+[process id]:15     [team id]: 2       [score]: 18 
+
+[process id]:7     [team id]: 2       [score]: 19 
+
+[process id]:10     [team id]: 2       [score]: 20 
+
+[process id]:8     [team id]: 0       [score]: 11 
+
+[process id]:13     [team id]: 0       [score]: 12 
+
+[process id]:12     [team id]: 0       [score]: 13 
+
+[process id]:5     [team id]: 0       [score]: 14 
+
+[process id]:17     [team id]: 0       [score]: 15 
+
+[process id]:14     [team id]: 1       [score]: 16 
+
+[process id]:6     [team id]: 1       [score]: 17 
+
+[process id]:16     [team id]: 1       [score]: 18 
+
+[process id]:9     [team id]: 1       [score]: 19 
+
+[process id]:18     [team id]: 1       [score]: 20 
+
+[process id]:4     [team id]: 2       [score]: 21 
+
+[process id]:7     [team id]: 2       [score]: 22 
+
+[process id]:10     [team id]: 2       [score]: 23 
+
+[process id]:5     [team id]: 0       [score]: 16 
+
+[process id]:8     [team id]: 0       [score]: 17 
+
+[process id]:11     [team id]: 2       [score]: 24 
+
+[process id]:12     [team id]: 0       [score]: 18 
+
+[process id]:17     [team id]: 0       [score]: 19 
+
+[process id]:13     [team id]: 0       [score]: 20 
+
+[process id]:5     [team id]: 0       [score]: 21 
+
+[process id]:15     [team id]: 2       [score]: 25 
+
+[process id]:4     [team id]: 2       [score]: 26 
+
+[process id]:7     [team id]: 2       [score]: 27 
+
+[process id]:6     [team id]: 1       [score]: 21 
+
+[process id]:9     [team id]: 1       [score]: 22 
+
+[process id]:14     [team id]: 1       [score]: 23 
+
+[process id]:8     [team id]: 0       [score]: 22 
+
+[process id]:12     [team id]: 0       [score]: 23 
+
+[process id]:10     [team id]: 2       [score]: 28 
+
+[process id]:11     [team id]: 2       [score]: 29 
+
+[process id]:16     [team id]: 1       [score]: 24 
+
+[process id]:18     [team id]: 1       [score]: 25 
+
+[process id]:6     [team id]: 1       [score]: 26 
+
+[process id]:5     [team id]: 0       [score]: 24 
+
+[process id]:8     [team id]: 0       [score]: 25 
+
+[process id]:12     [team id]: 0       [score]: 26 
+
+[process id]:13     [team id]: 0       [score]: 27 
+
+[process id]:17     [team id]: 0       [score]: 28 
+
+[process id]:4     [team id]: 2       [score]: 30 
+
+
+
+
+-----------------FAVORITISM: 75-----------------
+------------3 teams of 5 players---------------
+[process id]:4     [team id]: 0       [score]: 1 
+
+[process id]:6     [team id]: 0       [score]: 2 
+
+[process id]:9     [team id]: 0       [score]: 3 
+
+[process id]:5     [team id]: 1       [score]: 1 
+
+[process id]:3     [team id]: 2       [score]: 1 
+
+[process id]:7     [team id]: 2       [score]: 2 
+
+[process id]:10     [team id]: 2       [score]: 3 
+
+[process id]:12     [team id]: 2       [score]: 4 
+
+[process id]:16     [team id]: 2       [score]: 5 
+
+[process id]:3     [team id]: 2       [score]: 6 
+
+[process id]:8     [team id]: 1       [score]: 2 
+
+[process id]:15     [team id]: 1       [score]: 3 
+
+[process id]:17     [team id]: 1       [score]: 4 
+
+[process id]:13     [team id]: 1       [score]: 5 
+
+[process id]:5     [team id]: 1       [score]: 6 
+
+[process id]:11     [team id]: 0       [score]: 4 
+
+[process id]:14     [team id]: 0       [score]: 5 
+
+[process id]:9     [team id]: 0       [score]: 6 
+
+[process id]:4     [team id]: 0       [score]: 7 
+
+[process id]:6     [team id]: 0       [score]: 8 
+
+[process id]:11     [team id]: 0       [score]: 9 
+
+[process id]:3     [team id]: 2       [score]: 7 
+
+[process id]:7     [team id]: 2       [score]: 8 
+
+[process id]:15     [team id]: 1       [score]: 7 
+
+[process id]:5     [team id]: 1       [score]: 8 
+
+[process id]:8     [team id]: 1       [score]: 9 
+
+[process id]:17     [team id]: 1       [score]: 10 
+
+[process id]:13     [team id]: 1       [score]: 11 
+
+[process id]:16     [team id]: 2       [score]: 9 
+
+[process id]:10     [team id]: 2       [score]: 10 
+
+[process id]:12     [team id]: 2       [score]: 11 
+
+[process id]:3     [team id]: 2       [score]: 12 
+
+[process id]:17     [team id]: 1       [score]: 12 
+
+[process id]:5     [team id]: 1       [score]: 13 
+
+[process id]:8     [team id]: 1       [score]: 14 
+
+[process id]:13     [team id]: 1       [score]: 15 
+
+[process id]:15     [team id]: 1       [score]: 16 
+
+[process id]:4     [team id]: 0       [score]: 10 
+
+[process id]:6     [team id]: 0       [score]: 11 
+
+[process id]:7     [team id]: 2       [score]: 13 
+
+[process id]:9     [team id]: 0       [score]: 12 
+
+[process id]:11     [team id]: 0       [score]: 13 
+
+[process id]:14     [team id]: 0       [score]: 14 
+
+[process id]:4     [team id]: 0       [score]: 15 
+
+[process id]:6     [team id]: 0       [score]: 16 
+
+[process id]:10     [team id]: 2       [score]: 14 
+
+[process id]:12     [team id]: 2       [score]: 15 
+
+[process id]:3     [team id]: 2       [score]: 16 
+
+[process id]:16     [team id]: 2       [score]: 17 
+
+[process id]:13     [team id]: 1       [score]: 17 
+
+[process id]:15     [team id]: 1       [score]: 18 
+
+[process id]:17     [team id]: 1       [score]: 19 
+
+[process id]:5     [team id]: 1       [score]: 20 
+
+[process id]:8     [team id]: 1       [score]: 21 
+
+[process id]:13     [team id]: 1       [score]: 22 
+
+[process id]:15     [team id]: 1       [score]: 23 
+
+[process id]:7     [team id]: 2       [score]: 18 
+
+[process id]:3     [team id]: 2       [score]: 19 
+
+[process id]:12     [team id]: 2       [score]: 20 
+
+[process id]:10     [team id]: 2       [score]: 21 
+
+[process id]:4     [team id]: 0       [score]: 17 
+
+[process id]:6     [team id]: 0       [score]: 18 
+
+[process id]:9     [team id]: 0       [score]: 19 
+
+[process id]:11     [team id]: 0       [score]: 20 
+
+[process id]:14     [team id]: 0       [score]: 21 
+
+[process id]:4     [team id]: 0       [score]: 22 
+
+[process id]:6     [team id]: 0       [score]: 23 
+
+[process id]:16     [team id]: 2       [score]: 22 
+
+[process id]:3     [team id]: 2       [score]: 23 
+
+[process id]:12     [team id]: 2       [score]: 24 
+
+[process id]:7     [team id]: 2       [score]: 25 
+
+[process id]:10     [team id]: 2       [score]: 26 
+
+[process id]:5     [team id]: 1       [score]: 24 
+
+[process id]:13     [team id]: 1       [score]: 25 
+
+[process id]:8     [team id]: 1       [score]: 26 
+
+[process id]:15     [team id]: 1       [score]: 27 
+
+[process id]:17     [team id]: 1       [score]: 28 
+
+[process id]:5     [team id]: 1       [score]: 29 
+
+[process id]:9     [team id]: 0       [score]: 24 
+
+[process id]:4     [team id]: 0       [score]: 25 
+
+[process id]:11     [team id]: 0       [score]: 26 
+
+[process id]:6     [team id]: 0       [score]: 27 
+
+[process id]:14     [team id]: 0       [score]: 28 
+
+[process id]:16     [team id]: 2       [score]: 27 
+
+[process id]:3     [team id]: 2       [score]: 28 
+
+[process id]:10     [team id]: 2       [score]: 29 
+
+[process id]:12     [team id]: 2       [score]: 30 
+
+
+
+# Almost every time there is a sequence of 5 players from the same group, then they move on to the next group (because all 5 players are sleeping)
+-----------------FAVORITISM: 100-----------------
+------------3 teams of 5 players---------------
+[process id]:5     [team id]: 1       [score]: 1 
+
+[process id]:6     [team id]: 1       [score]: 2 
+
+[process id]:9     [team id]: 1       [score]: 3 
+
+[process id]:11     [team id]: 1       [score]: 4 
+
+[process id]:14     [team id]: 1       [score]: 5 
+
+[process id]:4     [team id]: 0       [score]: 1 
+
+[process id]:7     [team id]: 0       [score]: 2 
+
+[process id]:12     [team id]: 0       [score]: 3 
+
+[process id]:10     [team id]: 0       [score]: 4 
+
+[process id]:16     [team id]: 0       [score]: 5 
+
+[process id]:3     [team id]: 2       [score]: 1 
+
+[process id]:8     [team id]: 2       [score]: 2 
+
+[process id]:15     [team id]: 2       [score]: 3 
+
+[process id]:13     [team id]: 2       [score]: 4 
+
+[process id]:17     [team id]: 2       [score]: 5 
+
+[process id]:11     [team id]: 1       [score]: 6 
+
+[process id]:5     [team id]: 1       [score]: 7 
+
+[process id]:6     [team id]: 1       [score]: 8 
+
+[process id]:14     [team id]: 1       [score]: 9 
+
+[process id]:9     [team id]: 1       [score]: 10 
+
+[process id]:11     [team id]: 1       [score]: 11 
+
+[process id]:12     [team id]: 0       [score]: 6 
+
+[process id]:7     [team id]: 0       [score]: 7 
+
+[process id]:4     [team id]: 0       [score]: 8 
+
+[process id]:10     [team id]: 0       [score]: 9 
+
+[process id]:16     [team id]: 0       [score]: 10 
+
+[process id]:3     [team id]: 2       [score]: 6 
+
+[process id]:13     [team id]: 2       [score]: 7 
+
+[process id]:8     [team id]: 2       [score]: 8 
+
+[process id]:15     [team id]: 2       [score]: 9 
+
+[process id]:17     [team id]: 2       [score]: 10 
+
+[process id]:3     [team id]: 2       [score]: 11 
+
+[process id]:13     [team id]: 2       [score]: 12 
+
+[process id]:16     [team id]: 0       [score]: 11 
+
+[process id]:4     [team id]: 0       [score]: 12 
+
+[process id]:7     [team id]: 0       [score]: 13 
+
+[process id]:10     [team id]: 0       [score]: 14 
+
+[process id]:12     [team id]: 0       [score]: 15 
+
+[process id]:5     [team id]: 1       [score]: 12 
+
+[process id]:6     [team id]: 1       [score]: 13 
+
+[process id]:9     [team id]: 1       [score]: 14 
+
+[process id]:11     [team id]: 1       [score]: 15 
+
+[process id]:14     [team id]: 1       [score]: 16 
+
+[process id]:5     [team id]: 1       [score]: 17 
+
+[process id]:7     [team id]: 0       [score]: 16 
+
+[process id]:4     [team id]: 0       [score]: 17 
+
+[process id]:10     [team id]: 0       [score]: 18 
+
+[process id]:12     [team id]: 0       [score]: 19 
+
+[process id]:16     [team id]: 0       [score]: 20 
+
+[process id]:3     [team id]: 2       [score]: 13 
+
+[process id]:8     [team id]: 2       [score]: 14 
+
+[process id]:15     [team id]: 2       [score]: 15 
+
+[process id]:13     [team id]: 2       [score]: 16 
+
+[process id]:17     [team id]: 2       [score]: 17 
+
+[process id]:3     [team id]: 2       [score]: 18 
+
+[process id]:15     [team id]: 2       [score]: 19 
+
+[process id]:8     [team id]: 2       [score]: 20 
+
+[process id]:14     [team id]: 1       [score]: 18 
+
+[process id]:5     [team id]: 1       [score]: 19 
+
+[process id]:6     [team id]: 1       [score]: 20 
+
+[process id]:9     [team id]: 1       [score]: 21 
+
+[process id]:11     [team id]: 1       [score]: 22 
+
+[process id]:4     [team id]: 0       [score]: 21 
+
+[process id]:7     [team id]: 0       [score]: 22 
+
+[process id]:16     [team id]: 0       [score]: 23 
+
+[process id]:10     [team id]: 0       [score]: 24 
+
+[process id]:12     [team id]: 0       [score]: 25 
+
+[process id]:4     [team id]: 0       [score]: 26 
+
+[process id]:7     [team id]: 0       [score]: 27 
+
+[process id]:17     [team id]: 2       [score]: 21 
+
+[process id]:3     [team id]: 2       [score]: 22 
+
+[process id]:8     [team id]: 2       [score]: 23 
+
+[process id]:13     [team id]: 2       [score]: 24 
+
+[process id]:15     [team id]: 2       [score]: 25 
+
+[process id]:5     [team id]: 1       [score]: 23 
+
+[process id]:6     [team id]: 1       [score]: 24 
+
+[process id]:9     [team id]: 1       [score]: 25 
+
+[process id]:11     [team id]: 1       [score]: 26 
+
+[process id]:14     [team id]: 1       [score]: 27 
+
+[process id]:5     [team id]: 1       [score]: 28 
+
+[process id]:4     [team id]: 0       [score]: 28 
+
+[process id]:7     [team id]: 0       [score]: 29 
+
+[process id]:12     [team id]: 0       [score]: 30 
+
+
+
+
+# without sleep - the first process to enter determines which team will be playing throughout the entire game
+-----------------WITHOUT SLEEP(1)--------------
+-----------------FAVORITISM: 100---------------
+------------3 teams of 5 players---------------
+[process id]:4     [team id]: 0       [score]: 1 
+
+[process id]:6     [team id]: 0       [score]: 2 
+
+[process id]:9     [team id]: 0       [score]: 3 
+
+[process id]:12     [team id]: 0       [score]: 4 
+
+[process id]:15     [team id]: 0       [score]: 5 
+
+[process id]:4     [team id]: 0       [score]: 6 
+
+[process id]:6     [team id]: 0       [score]: 7 
+
+[process id]:9     [team id]: 0       [score]: 8 
+
+[process id]:12     [team id]: 0       [score]: 9 
+
+[process id]:15     [team id]: 0       [score]: 10 
+
+[process id]:4     [team id]: 0       [score]: 11 
+
+[process id]:6     [team id]: 0       [score]: 12 
+
+[process id]:9     [team id]: 0       [score]: 13 
+
+[process id]:12     [team id]: 0       [score]: 14 
+
+[process id]:15     [team id]: 0       [score]: 15 
+
+[process id]:4     [team id]: 0       [score]: 16 
+
+[process id]:6     [team id]: 0       [score]: 17 
+
+[process id]:9     [team id]: 0       [score]: 18 
+
+[process id]:12     [team id]: 0       [score]: 19 
+
+[process id]:15     [team id]: 0       [score]: 20 
+
+[process id]:4     [team id]: 0       [score]: 21 
+
+[process id]:6     [team id]: 0       [score]: 22 
+
+[process id]:9     [team id]: 0       [score]: 23 
+
+[process id]:12     [team id]: 0       [score]: 24 
+
+[process id]:15     [team id]: 0       [score]: 25 
+
+[process id]:4     [team id]: 0       [score]: 26 
+
+[process id]:6     [team id]: 0       [score]: 27 
+
+[process id]:9     [team id]: 0       [score]: 28 
+
+[process id]:12     [team id]: 0       [score]: 29 
+
+[process id]:15     [team id]: 0       [score]: 30

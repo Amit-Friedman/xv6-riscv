@@ -29,6 +29,7 @@ OBJS = \
   $K/kernelvec.o \
   $K/plic.o \
   $K/israelilock.o \
+  $K/scores.o \
   $K/virtio_disk.o
   
 
@@ -118,6 +119,9 @@ mkfs/mkfs: mkfs/mkfs.c $K/fs.h $K/param.h
 .PRECIOUS: %.o
 
 UPROGS=\
+	$U/_relay_race\
+	$U/_relay_race_other\
+	$U/_testscore\
 	$U/_testil\
 	$U/_testrand\
 	$U/_cat\

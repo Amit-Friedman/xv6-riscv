@@ -30,6 +30,10 @@ int israeli_create(int);
 int israeli_acquire(int);
 int israeli_release(int);
 int israeli_destroy(int);
+void init_scores(void);
+int  get_score(int);
+int  increment_score(int);
+int  is_game_over(void);
 
 // ulib.c
 int stat(const char*, struct stat*);
